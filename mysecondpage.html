@@ -3,6 +3,7 @@
 <head>
    <title>Моя вторая веб-страница</title>
 <!-- Кстати, это комментарий -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
 <table border="1">
@@ -38,6 +39,157 @@
    <dt>Кошачье пиво</dt>
    <dd>Белая жидкость, которую производят коровы и которую люди использую в пищу.</dd>
 </dl>
-</body>
 <a href="#top" onclick="alert ('ух ты. Javascript.')">Нажми сюда</a>
+
+<a href='somepage.html' accesskey="s">Другая страница</a>
+
+<a href="#"
+   onclick="opennastypopup()"
+   onkeypress="opennastypopup()"
+   title="Открывает всплывающее окно Javascript">Монстр</a>
+
+   <script type="text/javascript">
+      function opennastypopup() {
+         window.open("monster.html", "", "toolbar=no,height=100,width=200");
+         return false;
+      }
+   </script>
+
+   <a href='monster.html' onclick="return opennastypopup()" onkeypress="return opennastypopup()">Монстр</a>
+
+   <p>
+      Этот вебсайт посвящен <abbr title="HyperText Markup Language">HTML</abbr> и
+      <acronym title="Телеграфное агентство Советского Союза">ТАСС</acronym>.
+   </p>
+   <p>
+      Я спросил Сергея о цитатах, и он ответил
+      <cite>О цитатах я знаю столько же сколько и о мышлении птиц</cite>.
+      К счастью я нашел хороший учебник...
+   </p>
+
+   <blockquote title="Из учебника">
+       <p>
+          Теги blockquote, q и cite используются для определения цитат.
+          Тег blockquote создает блочный элемент и используется для определения больших цитат,
+          в то время как тег q создает строчный элемент и используется для цитат небольшого размера.
+      </p>
+   </blockquote>
+   <code>
+      <var>ronankeatingisbland</var> = true;
+   </code>
+   <pre>
+      &lt;div id="intro"&gt;
+      &lt;h1&gt;Заголовок&lt;/h1&gt;
+      &lt;p&gt;Параграфный параграф.&lt;/p&gt;
+      &lt;/div&gt;
+   </pre>
+   <p>
+      <dfn title="Мутация, при которой сочетается два или больше наборов хромосом представителей разных видов">Аллополиплоид</dfn> - это…
+   </p>
+   <address>
+      г. Гдеград<br />
+      ул. Кудыкина<br />
+      д. 160, кв. 8
+   </address>  
+   <p>
+   <bdo dir="rtl">lmth</bdo>
+   </p>
+   <p>
+      Теперь введите: <kbd>здорово</kbd>
+   </p>
+   <p>
+      Очевидно, что это <del datetime="20030522">чепуха</del> <ins cite="http://www.msiter.ru">очень информативно</ins>.
+   </p>
+   <table>
+      <colgroup>
+         <col />
+         <col class="alternate" />
+         <col />
+      </colgroup>
+      <tr>
+         <td>Это</td>
+         <td>То</td>
+         <td>Другое</td>
+      </tr>
+      <tr>
+         <td>Птичка</td>
+         <td>Крокодил</td>
+         <td>Завтрак</td>
+      </tr>
+   </table>
+   <table summary="Брачные привычки цикад, демонстрирующие особенности по сравнению с саранчой">
+      <caption><strong>Брачные особенности цикад</strong></caption>
+      <colgroup>
+         <col />
+         <col span="3" class="alternate" />
+      </colgroup>
+      <tr>
+         <td>Это</td>
+         <td>То</td>
+         <td>Другое</td>
+      </tr>
+      <tr>
+         <td>Птичка</td>
+         <td>Крокодил</td>
+         <td>Завтрак</td>
+      </tr>
+   </table> 
+<p> 
+ <table>
+   <thead>
+      <tr>
+         <td>Заголовок 1</td>
+         <td>Заголовок 2</td>
+         <td>Заголовок 3</td>
+      </tr>
+   </thead>
+   <tfoot>
+      <tr>
+         <td>Нижний колонтитул 1</td>
+         <td>Нижний колонтитул 2</td>
+         <td>Нижний колонтитул 3</td>
+      </tr>
+   </tfoot>
+   <tbody>
+      <tr>
+         <td>Ячейка 1</td>
+         <td>Ячейка 2</td>
+         <td>Ячейка 3</td>
+      </tr>
+   </tbody>
+ </table>
+</p> 
+<form>
+   <label for="yourName">Ваше имя</label>
+   <input type="text" name="yourName" id="yourName" />
+<form action='somescript.php' >
+   <fieldset>
+      <legend>Имя</legend>
+      <p>Имя <input type="text" name="firstName" /></p>
+      <p>Фамилия <input type="text" name="lastName" /></p>
+   </fieldset>
+   <fieldset>
+      <legend>Адрес</legend>
+      <p>Адрес <textarea name="address" ></textarea></p>
+      <p>Индекс <input type="text" name="postcode" /></p>
+   </fieldset>
+   <select name="country">
+      <optgroup label="Африка">
+         <option value="gam">Гамбия</option>
+         <option value="mad">Мадагаскар</option>
+         <option value="nam">Намибия</option>
+      </optgroup>
+      <optgroup label="Европа">
+         <option value="fra">Франция</option>
+         <option value="rus">Россия</option>
+         <option value="uk">Великобритания</option>
+      </optgroup>
+      <optgroup label="Северная Америка">
+         <option value="can">Канада</option>
+         <option value="mex">Мексика</option>
+         <option value="usa">США</option>
+      </optgroup>
+   </select>
+   <input type="text" name="firstName" accesskey="f" tabindex="1" />
+</body>
 </html>
